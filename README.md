@@ -19,4 +19,4 @@ This plugin allows you easily to connect Easy Digital Downloads with Mailerlite.
 
 This was developed by [flowdee](https://flowdee.de/). 
 
-This plugin is not official made or maintained by [Easy Digital Downloads](https://donate.flowdee.de/) or [Mailerlite](http://www.mailerlite.com/a/7qq80y6dbo), but making use of the official [Mailerlite API](https://developers.mailerlite.com/docs).
+This plugin is not official made or maintained by [Easy Digital Downloads](https://easydigitaldownloads.com/) or [Mailerlite](http://www.mailerlite.com/a/7qq80y6dbo), but making use of the official [Mailerlite API](https://developers.mailerlite.com/docs).
