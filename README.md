@@ -1,3 +1,5 @@
+![Banner](https://ps.w.org/edd-mailerlite/assets/banner-772x250.png)
+
 # EDD Mailerlite
 [![Plugin Version](https://img.shields.io/wordpress/plugin/v/edd-mailerlite.svg)](https://wordpress.org/plugins/edd-mailerlite/) [![WordPress Version Compatibility](https://img.shields.io/wordpress/v/edd-mailerlite.svg)](https://wordpress.org/plugins/edd-mailerlite/) [![Downloads](https://img.shields.io/wordpress/plugin/dt/edd-mailerlite.svg)](https://wordpress.org/plugins/edd-mailerlite/) [![Rating](https://img.shields.io/wordpress/plugin/r/edd-mailerlite.svg)](https://wordpress.org/plugins/edd-mailerlite/)
 
