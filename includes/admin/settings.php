@@ -22,7 +22,7 @@ function edd_ml_settings( $settings ) {
     $ml_settings = array(
         array(
             'id'   => 'edl_ml',
-            'name' => '<strong>' . __( 'Mailerlite', 'edd_sl' ) . '</strong>',
+            'name' => '<strong>' . __( 'Mailerlite', 'edd-mailerlite' ) . '</strong>',
             'desc' => '',
             'type' => 'header',
             'size' => 'regular'
