@@ -77,8 +77,10 @@ if( ! class_exists( 'EDD_Mailerlite' ) ) {
             define( 'EDD_MAILERLITE_PREFIX', 'edd_ml_' );
 
             // API Key
-            $api_key = ( function_exists( 'edd_get_option' ) ) ? edd_get_option( 'edd_ml_api_key', '' ) : '';
-            define( 'FLOWDEE_MAILERLITE_API_KEY', $api_key );
+            if ( ! defined( 'FLOWDEE_MAILERLITE_API_KEY' ) ) {
+                $api_key = ( function_exists( 'edd_get_option' ) ) ? edd_get_option( 'edd_ml_api_key', '' ) : '';
+                define( 'FLOWDEE_MAILERLITE_API_KEY', $api_key );
+            }
         }
         
         /**
