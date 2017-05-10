@@ -1,7 +1,5 @@
 <?php
-if ( function_exists( 'flowdee_ml_get_api_connection') )
-    return;
-
+if ( ! function_exists( 'flowdee_ml_api_key_validation') ) :
 /**
  * Check Mailerlite API connection
  *
@@ -31,7 +29,9 @@ function flowdee_ml_api_key_validation( $api_key ) {
 
     return false;
 }
+endif;
 
+if ( ! function_exists( 'flowdee_ml_get_groups') ) :
 /**
  * Get groups from API
  *
@@ -69,7 +69,9 @@ function flowdee_ml_get_groups() {
 
     return $groups;
 }
+endif;
 
+if ( ! function_exists( 'flowdee_ml_add_subscriber') ) :
 /**
  * Add subscriber to group via API
  *
@@ -98,7 +100,7 @@ function flowdee_ml_add_subscriber( $group_id, $subscriber = array() ) {
 
     $subscriber = wp_parse_args( $subscriber, $default_subscriber );
 
-    //edd_ml_debug( $subscriber );
+    //woo_ml_debug( $subscriber );
 
     if ( empty( $subscriber['email'] ) )
         return false;
@@ -112,7 +114,7 @@ function flowdee_ml_add_subscriber( $group_id, $subscriber = array() ) {
         $addedSubscriber = $groupsApi->addSubscriber( $group_id, $subscriber ); // returns added subscriber
 
         if ( isset( $addedSubscriber->id ) ) {
-            //edd_ml_debug( $addedSubscriber );
+            //woo_ml_debug( $addedSubscriber );
             return $addedSubscriber->id;
         } else {
             // $addedSubscriber->error->message
@@ -124,7 +126,9 @@ function flowdee_ml_add_subscriber( $group_id, $subscriber = array() ) {
         return false;
     }
 }
+endif;
 
+if ( ! function_exists( 'flowdee_ml_api_key_exists') ) :
 /**
  * Check wether API key exists or not
  *
@@ -137,3 +141,4 @@ function flowdee_ml_api_key_exists() {
 
     return false;
 }
+endif;
