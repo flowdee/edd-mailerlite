@@ -29,46 +29,46 @@ function edd_ml_settings( $settings ) {
         ),
         array(
             'id'    => 'edd_ml_api_key',
-            'name'  => __( 'Mailerlite API Key', 'eddl-mailerlite' ),
+            'name'  => __( 'Mailerlite API Key', 'edd-mailerlite' ),
             'desc'  => edd_ml_settings_get_api_key_status(),
             'type'  => 'text'
         ),
         array(
             'id'    => 'edd_ml_group',
-            'name'  => __( 'Group', 'eddl-mailerlite' ),
-            'desc'  => __( 'The default group which will be taken for new subscribers', 'eddl-mailerlite' ),
+            'name'  => __( 'Group', 'edd-mailerlite' ),
+            'desc'  => __( 'The default group which will be taken for new subscribers', 'edd-mailerlite' ),
             'type'  => 'select',
             'options' => edd_ml_settings_get_group_options()
         ),
         array(
             'id'    => 'edd_ml_checkout',
-            'name'  => __( 'Checkout', 'eddl-mailerlite' ),
-            'desc'  => __( 'Enable list subscription via checkout page', 'eddl-mailerlite' ),
+            'name'  => __( 'Checkout', 'edd-mailerlite' ),
+            'desc'  => __( 'Enable list subscription via checkout page', 'edd-mailerlite' ),
             'type'  => 'checkbox'
         ),
         array(
             'id'    => 'edd_ml_checkout_preselect',
-            'name'  => __( 'Pre-select checkbox', 'eddl-mailerlite' ),
-            'desc'  => __( 'Check in order to pre-select the signup checkbox by default', 'eddl-mailerlite' ),
+            'name'  => __( 'Pre-select checkbox', 'edd-mailerlite' ),
+            'desc'  => __( 'Check in order to pre-select the signup checkbox by default', 'edd-mailerlite' ),
             'type'  => 'checkbox'
         ),
         array(
             'id'    => 'edd_ml_checkout_hide',
-            'name'  => __( 'Hide checkbox', 'eddl-mailerlite' ),
-            'desc'  => __( 'Check in order to hide the checkbox. All customers will be subscribed automatically', 'eddl-mailerlite' ),
+            'name'  => __( 'Hide checkbox', 'edd-mailerlite' ),
+            'desc'  => __( 'Check in order to hide the checkbox. All customers will be subscribed automatically', 'edd-mailerlite' ),
             'type'  => 'checkbox'
         ),
         array(
             'id'    => 'edd_ml_checkout_label',
-            'name'  => __( 'Checkbox label', 'eddl-mailerlite' ),
-            'desc'  => __( 'The text which will be shown besides the checkbox', 'eddl-mailerlite' ),
+            'name'  => __( 'Checkbox label', 'edd-mailerlite' ),
+            'desc'  => __( 'The text which will be shown besides the checkbox', 'edd-mailerlite' ),
             'type'  => 'text',
-            'std'   => __( 'Yes, I want to receive your newsletter.', 'eddl-mailerlite' )
+            'std'   => __( 'Yes, I want to receive your newsletter.', 'edd-mailerlite' )
         ),
         array(
             'id'    => 'edd_ml_double_optin',
-            'name'  => __( 'Double Opt-In', 'eddl-mailerlite' ),
-            'desc'  => __( 'Check in order to force email confirmation before being added to your list', 'eddl-mailerlite' ),
+            'name'  => __( 'Double Opt-In', 'edd-mailerlite' ),
+            'desc'  => __( 'Check in order to force email confirmation before being added to your list', 'edd-mailerlite' ),
             'type'  => 'checkbox'
         ),
     );
