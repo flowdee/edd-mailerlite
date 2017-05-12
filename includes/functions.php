@@ -104,12 +104,25 @@ function edd_ml_process_signup( $payment_id ) {
         'type' => ( $double_option ) ? 'unconfirmed' : 'subscribed' // subscribed, active, unconfirmed
     );
 
+    // Collect data
+    $data = array(
+        'group' => $group,
+        'subscriber' => $subscriber
+    );
+
     //edd_ml_debug_log( $subscriber );
 
-    $added = flowdee_ml_add_subscriber( $group, $subscriber );
+    // Allow data manipulation
+    $data = apply_filters( 'edd_ml_subscription_data', $data, $payment_id );
 
-    if ( $added )
-        edd_insert_payment_note( $payment_id, __( 'Customer successfully subscribed to mailing list(s).', 'edd-mailerlite' ) );
+    // Finally check data and subscribe to list
+    if ( isset( $data['group'] ) && isset( $data['subscriber'] ) ) {
+
+        $added = flowdee_ml_add_subscriber( $data['group'], $data['subscriber'] );
+
+        if ( $added )
+            edd_insert_payment_note( $payment_id, __( 'Customer successfully subscribed to mailing list(s).', 'edd-mailerlite' ) );
+    }
 }
 
 /**
