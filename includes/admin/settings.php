@@ -73,6 +73,8 @@ function edd_ml_settings( $settings ) {
         ),
     );
 
+    $ml_settings = apply_filters( 'edd_ml_settings', $ml_settings );
+
     // If EDD is at version 2.5 or later...
     if ( version_compare( EDD_VERSION, 2.5, '>=' ) ) {
         $ml_settings = array( 'edd-ml-settings' => $ml_settings );
